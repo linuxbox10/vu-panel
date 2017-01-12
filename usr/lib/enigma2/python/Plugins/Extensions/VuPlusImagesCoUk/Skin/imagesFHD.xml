@@ -1,0 +1,17 @@
+	<screen name="menu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="#30000000" >
+    <eLabel text="VuPlus-Images FullHD Panel" position="110,0" size="1920,170" noWrap="1" transparent="1" font="Rale;120" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1920,1080" zPosition="10" alphatest="blend"  /> -->	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abo.png" position="1550,1030" size="343,36" zPosition="10" alphatest="blend" />	
+	<widget name="menu" position="110,190" backgroundColorSelected="#30000000" size="1100,720" foregroundColor="#fff700" foregroundColorSelected="#cc0000" scrollbarMode="showNever" transparent="1" zPosition="10" />	
+	<widget name="info" position="110,1010" zPosition="4" size="920,42" font="Rale;38" foregroundColor="#7fff00" transparent="1" />		
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,180" size="800,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,260" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,340" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,420" size="800,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,500" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,580" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,660" size="800,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,740" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,820" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,900" size="800,1" zPosition="10" alphatest="blend" /> 
+	</screen>	

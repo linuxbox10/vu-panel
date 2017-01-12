@@ -1,0 +1,8 @@
+<screen name="Menu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="#30000000"  >
+    <eLabel text="VuPlus-Images HD Panel" position="120,0" size="1280,120" noWrap="1" transparent="1" font="Rale;80" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1280,720" zPosition="10" alphatest="blend"  /> -->	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abohd.png" position="1050,690" size="210,26" zPosition="10" alphatest="blend" />	
+	<widget name="ButtonRedtext" position="110,680" zPosition="10" size="130,60" font="Rale;24" transparent="1" foregroundColor="#cc0000" />
+	<widget name="ButtonGreentext" position="260,680" zPosition="10" size="450,60" font="Rale;24" transparent="1" foregroundColor="#7fff00" />	
+	<widget name="list" position="70,125" size="400,450" backgroundColorSelected="#30000000" foregroundColor="#fff700" foregroundColorSelected="#cc0000" scrollbarMode="showNever" transparent="1" zPosition="10" />				
+</screen>

@@ -1,0 +1,36 @@
+	<screen name="menu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="#30000000" >
+    <eLabel text="VuPlus-Images FullHD Panel" position="110,0" size="1920,170" noWrap="1" transparent="1" font="Rale;120" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1920,1080" zPosition="10" alphatest="blend"  /> -->	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abo.png" position="1550,1030" size="343,36" zPosition="10" alphatest="blend" />
+	<widget source="menu" render="Listbox" position="110,180" size="900,300" backgroundColorSelected="#30000000" foregroundColor="#fff700" foregroundColorSelected="#cc0000" zPosition="3" transparent="1" scrollbarMode="showNever">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0, 5), size = (770, 40), flags = RT_HALIGN_LEFT, text = 1),
+	],
+	"fonts": [gFont("Rale", 35)],
+	"itemHeight": 45
+	}
+	</convert>
+	</widget>
+	<widget source="menu" render="Listbox" position="800,300" size="900,150" zPosition="4" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0, 5), size = (770, 150), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2),
+	],
+	"fonts": [gFont("Rale", 34)],
+	"itemHeight": 150
+	}
+	</convert>
+	</widget>
+	<widget source="downloadtext" render="Label" position="110,1000" size="900,150" valign="left" halign="left" font="Rale;34" transparent="1" zPosition="3" foregroundColor="#00ff00" />
+	<widget source="targettext" render="Label" position="110,650" size="450,80" valign="top" halign="left" font="Rale;30" transparent="1" zPosition="3" foregroundColor="#00ff00" />
+	<widget name="target" position="110,700" size="420,100" valign="top" halign="left" font="Rale;27" transparent="1" zPosition="4"/>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,180" size="800,1" zPosition="10" alphatest="blend" /> 
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,2110" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,270" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,315" size="800,1" zPosition="10" alphatest="blend" /> 
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,475" size="800,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,509" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,850" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="110,880" size="800,1" zPosition="10" alphatest="blend" /> 	
+	</screen>

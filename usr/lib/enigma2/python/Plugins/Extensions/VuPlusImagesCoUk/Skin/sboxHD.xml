@@ -1,0 +1,16 @@
+<screen name="Menu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="#30000000"  >
+    <eLabel text="VuPlus-Images HD Panel" position="120,0" size="1280,120" noWrap="1" transparent="1" font="Rale;80" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1280,720" zPosition="10" alphatest="blend"  /> -->	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abohd.png" position="1050,690" size="210,26" zPosition="10" alphatest="blend" />
+    <widget font="Rale;24" name="text" position="80,270" backgroundColor="#30000000" foregroundColor="#fff700" size="900,510" />
+    <widget name="ErrorPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/input_error.png" position="80,180" size="53,53" transparent="1" alphatest="blend" zPosition="2"/>
+	<widget name="QuestionPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/input_question.png" position="80,180" size="53,53" transparent="1" alphatest="blend" zPosition="2"/>
+	<widget name="InfoPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/input_info.png" position="80,180" size="53,53" transparent="1" alphatest="blend" zPosition="2"/>
+	<widget name="list" position="300,550" size="100,720" transparent="1" zPosition="2" backgroundColorSelected="#30000000" foregroundColor="#fff700" foregroundColorSelected="#cc0000" />	
+	<applet type="onLayoutFinish">	
+	</applet>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="40,550" size="600,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="40,600" size="600,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="40,730" size="600,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="40,780" size="600,1" zPosition="10" alphatest="blend" />	
+	</screen>

@@ -1,0 +1,13 @@
+<screen name="Menu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="#30000000" >
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logohd.png" position="0,0" size="1280,120" zPosition="10" alphatest="blend"  />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abohd.png" position="1050,690" size="210,26" zPosition="10" alphatest="blend" />				
+    <eLabel text="Latest Release v2.9" position="center,230" valign="center" halign="center" size="1280,45" noWrap="1" transparent="1" font="Rale;42" foregroundColor="#f7d200" zPosition="6" />
+	<eLabel text="The Team:" position="center,300" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;35" foregroundColor="#ffffff" zPosition="6" />
+	<eLabel text="Administration Team:" position="center,350" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;35" foregroundColor="#cc0000" zPosition="6" />
+	<eLabel text="Ten Below, DirtyDonki, Tube10000" position="center,390" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;34" foregroundColor="#cc0000" zPosition="6" />
+	<eLabel text="Super Moderators:" position="center,450" size="1280,76" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;33" foregroundColor="#00ff00" zPosition="6" />
+	<eLabel text="vusolo2, Aliraza63, G_ogi, Talks, danny187, Vmax" position="center,505" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;33" foregroundColor="#00ff00" zPosition="6" />
+	<eLabel text=" https://vuplus-images.co.uk" position="center,610" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;33" foregroundColor="#ffffff" zPosition="6" />    
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="center,150" size="600,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/line.png" position="center,210" size="600,1" zPosition="10" alphatest="blend" />	
+</screen>	

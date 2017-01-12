@@ -1,0 +1,13 @@
+<screen name="Menu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="#30000000" >
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" size="1920,190" position="0,10" zPosition="10" alphatest="blend"  />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abo.png" position="1550,1030" size="343,36" zPosition="10" alphatest="blend" />			
+    <eLabel text="Latest Release v2.9" position="center,370" size="1920,85" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;72" foregroundColor="#f7d200" zPosition="6" />
+	<eLabel text="The Team:" position="center,455" size="1920,78" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;65" foregroundColor="#ffffff" zPosition="6" />
+	<eLabel text="Administration Team:" position="center,535" size="1920,78" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;65" foregroundColor="#cc0000" zPosition="6" />
+	<eLabel text="Ten Below, DirtyDonki, Tube10000" position="center,615" size="1920,77" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;64" foregroundColor="#cc0000" zPosition="6" />
+	<eLabel text="Super Moderators:" position="center,695" size="1920,76" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;63" foregroundColor="#00ff00" zPosition="6" />
+	<eLabel text="vusolo2, Aliraza63, G_ogi, Talks, danny187, Vmax" position="center,775" size="1920,76" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;63" foregroundColor="#00ff00" zPosition="6" />
+	<eLabel text=" https://vuplus-images.co.uk" position="center,855" size="1920,76" valign="center" halign="center" noWrap="1" transparent="1" font="Rale;63" foregroundColor="#ffffff" zPosition="6" />    
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="center,250" size="800,1" zPosition="10" alphatest="blend" /> 
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="center,310" size="800,1" zPosition="10" alphatest="blend" /> 	
+</screen>	

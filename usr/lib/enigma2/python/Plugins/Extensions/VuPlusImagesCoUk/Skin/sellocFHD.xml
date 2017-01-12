@@ -1,0 +1,13 @@
+	<screen name="Menu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="#30000000" >
+    <eLabel text="VuPlus-Images FullHD Panel" position="110,0" size="1920,170" noWrap="1" transparent="1" font="Rale;120" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1920,1080" zPosition="10" alphatest="blend"  /> -->	
+	<widget name="filelist" position="80,180" size="900,600" zPosition="3" backgroundColorSelected="#30000000" foregroundColor="#ffffff" foregroundColorSelected="#cc0000" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" />
+	<widget source="text" render="Label" position="80,720" size="700,60" halign="left" font="Rale;34" transparent="1" zPosition="3" foregroundColor="yellow" />
+	<widget name="target" position="80,760" size="700,60" halign="left" font="Rale;34" transparent="1" zPosition="4"/>
+	<ePixmap position="420,580" size="80,25" transparent="1" alphatest="blend" />
+	<widget name="ButtonRedtext" position="80,1010" zPosition="10" size="130,60" font="Rale;34" transparent="1" foregroundColor="#cc0000" />
+	<widget name="ButtonGreentext" position="210,1010" zPosition="10" size="350,60" font="Rale;34" transparent="1" foregroundColor="#7fff00" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="80,900" size="800,1" zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/linefhd.png" position="80,950" size="800,1" zPosition="10" alphatest="blend" /> 	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abo.png" position="1550,1030" size="343,36" zPosition="10" alphatest="blend" />	
+	</screen>	

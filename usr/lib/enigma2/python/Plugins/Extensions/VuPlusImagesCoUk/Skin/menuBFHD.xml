@@ -1,0 +1,13 @@
+	<screen name="Menu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="#30000000" >
+    <eLabel text="VuPlus-Images FullHD Panel" position="110,0" size="1920,170" noWrap="1" transparent="1" font="Rale;120" foregroundColor="#cc0000" />
+<!-- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/logo.png" position="0,0" size="1920,1080" zPosition="10" alphatest="blend"  /> -->
+	<widget name="text" position="300,210" backgroundColorSelected="#30000000" size="720,1000" foregroundColor="#bfff00" foregroundColorSelected="#cc0000" scrollbarMode="showNever" transparent="-10" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abo.png" position="1550,1030" size="343,36" zPosition="10" alphatest="blend" />	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled11.png" position="0,210" size="270,110"  zPosition="10" alphatest="blend" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled22.png" position="0,320" size="270,110" zPosition="10" alphatest="blend" />	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled33.png" position="0,420" size="270,110" zPosition="10" alphatest="blend" />	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled44.png" position="0,530" size="270,110" zPosition="10" alphatest="blend" />	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled55.png" position="0,650" size="270,110" zPosition="10" alphatest="blend" />	
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled66.png" position="0,760" size="270,110" zPosition="10" alphatest="blend" />	
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/Untitled77.png" position="0,860" size="270,100" zPosition="10" alphatest="blend" />		
+	</screen>
