@@ -113,48 +113,30 @@ class Feeds(Screen):
         self['ButtonRedtext'] = Label(_('Exit'))
         self['ButtonGreentext'] = Label(_('Choose DL Location'))	
         if currversion == 'eo2.0':
-            self.serversnames = ['Unofficial image Builds by Ten Below', 
-			 'Backup images by vuplus-images team', 
+            self.serversnames = ['Custom build images', 
+			 'Backup images', 
 			 'SatDreamGr',
              'OpenSPA',
              'OpenATV',
              'OpenDroid',
              'OpenESI',
              'OpenPLi',
-             'OpenLD',
-             'SFteam',			 
-             'Original Images 3.0',
              'BlackHole',
              'OpenBlackHole',
-             'OpenViX',
-             'OpenHDFreaks',
-             'VTi',
-             'PBnigma',
-             'HDMU',
-             'OPenPlus',
-             'OpenNFR',
-             'PKT']
+             'OpenHDF',
+             'VTi']
             self.serversurls = ['http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/TenBelowImages/',
 			 'http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/BackUpImages/', 
              'http://sgcpm.com/satdreamgr-images-experimental/vu/',
-             'http://venuscs.net/VuPlusImages/SPA/', 
+             'http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/spa/', 
              'http://images.mynonpublic.com/openatv/nightly/index.php?open=', 
-             'http://images.opendroid.org/5.5/VU+/index.php?dir=', 
-             'http://www.openesi.eu/images/images/index.php?dir=VU%2B/', 
-             'http://venuscs.net/VuPlusImages/OpenPLi/', 
-             'http://venuscs.net/VuPlusImages/OpenLD/',
-             'http://venuscs.net/VuPlusImages/SFteam/',			 
-             'http://venuscs.net/VuPlusImages/Original/', 
+             'http://images.opendroid.org/6.7/Vu+/index.php?dir=', 
+             'http://www.openesi.eu/images/index.php?dir=VU%2B/', 
+             'https://openpli.org/download/vuplus/', 
              'http://venuscs.net/VuPlusImages/BlackHole/', 
              'http://venuscs.net/VuPlusImages/OpenBlackHole/', 
-             'http://venuscs.net/VuPlusImages/OpenViX/', 
-             'http://v60.hdfreaks.cc/', 
-             'http://venuscs.net/VuPlusImages/VTi/', 
-             'http://venuscs.net/VuPlusImages/PBnigma60/',
-             'http://venuscs.net/VuPlusImages/HDMU/', 
-             'http://venuscs.net/VuPlusImages/OPenPlus/', 
-             'http://venuscs.net/VuPlusImages/OpenNFR/', 
-             'http://venuscs.net/VuPlusImages/'] 
+             'http://images.hdfreaks.cc/', 
+             'http://venuscs.net/VuPlusImages/VTi/'] 
         self.list = []
         self['text'] = MenuList([], True, eListboxPythonMultiContent)
         self.addon = 'emu'
@@ -228,188 +210,217 @@ class Servers(Screen):
         self.searchstr = None
         self.downloading = False
         self.data = []
-        if self.selectedservername == 'Unofficial image Builds by Ten Below':
-            self.groups = ['vuzero',
-             'vuuno',
+        if self.selectedservername == 'Custom build images':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
              'vusolo',
              'vusolo2',			 
-             'vuultimo',
-             'vuduo',
-             'vuduo2',
-             'vusolose',			 
              'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
-        if self.selectedservername == 'Backup images by vuplus-images team':
-            self.groups = ['vuzero',
-             'vuuno',
+        if self.selectedservername == 'Backup images':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
              'vusolo',
              'vusolo2',			 
-             'vuultimo',
-             'vuduo',
-             'vuduo2',
-             'vusolose',			 
              'vusolo4k',
-             'vuuno4k',
-             'vuultimo4k']
-            self.downloading = True				
-        if self.selectedservername == 'Original Images 3.0':
-            self.groups = ['vuzero',
-             'vuuno',
-             'vusolo',
-             'vusolo2',			 
+             'vusolose',
              'vuultimo',
-             'bm750',
-             'vuduo2',
-             'vusolose',			 
-             'vusolo4k',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']
-            self.downloading = True			
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True		
         if self.selectedservername == 'BlackHole':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'bm750',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
-            self.downloading = True			
-        if self.selectedservername == 'PBnigma':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
+             self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
              'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']			 
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+        self.downloading = True		
+        if self.selectedservername == 'PBnigma':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
         if self.selectedservername == 'OpenLD':
             self.groups = ['VuPlus']
             self.downloading = True
         self["old"] = Pixmap()			
         if self.selectedservername == 'OpenBlackHole':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'bm750',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
-            self.downloading = True			
-        if self.selectedservername == 'OpenSPA':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
-            self.downloading = True			
-        if self.selectedservername == 'OpenATV':
-            self.groups = ['vuzero',
-             'vuuno',
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
              'vusolo',
              'vusolo2',			 
-             'vuultimo',
-             'vuduo',
-             'vuduo2',
-             'vusolose',			 
              'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True			
+        if self.selectedservername == 'OpenSPA':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True				
+        if self.selectedservername == 'OpenATV':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
         if self.selectedservername == 'OpenViX':
-            self.groups = ['Vu+Duo',
-             'Vu+Duo2',
-             'Vu+Solo',
-             'Vu+Solo2',
-             'Vu+Solo-SE',
-             'Vu+Uno',			 
-             'Vu+Zero',
-             'Vu+Ultimo',
-             'Vu+Solo4K',
-             'Vu+Uno4K']
-            self.downloading = True			
-        if self.selectedservername == 'OpenHDFreaks':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True		
+        if self.selectedservername == 'OpenHDF':
             self.groups = ['vuduo',
              'vusolo',
              'vusolose',
              'vuzero']
             self.downloading = True			
         if self.selectedservername == 'VTi':
-            self.groups = ['vuzero',
-             'vuuno',
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
              'vusolo',
              'vusolo2',			 
-             'vuultimo',
-             'bm750',
-             'vuduo2',
-             'vusolose',			 
              'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
         if self.selectedservername == 'HDMU':
             self.groups = ['vuduo', 'vusolo2', 'vuzero']
             self.downloading = True						
         if self.selectedservername == 'SatDreamGr':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True				
         if self.selectedservername == 'OpenDroid':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
         if self.selectedservername == 'OpenESI':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
-             'vusolo4k']
-            self.downloading = True		
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True	
         if self.selectedservername == 'OPenPlus':
             self.groups = ['VuPlus']
             self.downloading = True
         if self.selectedservername == 'SFteam':
-            self.groups = ['vuduo',
+             self.groups = ['vuduo',
              'vuduo2',
+             'vuduo4k',
              'vusolo',
-             'vusolo2',
-             'vuzero',
-             'vuultimo',
+             'vusolo2',			 
+             'vusolo4k',
              'vusolose',
-             'vuuno']
-            self.downloading = True			
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+        self.downloading = True			
         if self.selectedservername == 'PKT':
             self.groups = ['HYPERION_5.3.1']
             self.downloading = True			
@@ -417,23 +428,34 @@ class Servers(Screen):
             self.groups = ['VuPlus']
             self.downloading = True			
         if self.selectedservername == 'OpenNFR':
-            self.groups = ['vuduo2',
-             'vusolo2',
-             'vusolose',
-             'vusolo4k']
-            self.downloading = True		
-        if self.selectedservername == 'OpenPLi':
-            self.groups = ['vuzero', 
-			 'vuuno',
-			 'vuultimo',
-			 'vusolo',
-			 'vusolo2',
-			 'vuduo',
-			 'vuduo2',
-			 'vusolose',			 
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
              'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
              'vuuno4k',
-             'vuultimo4k']			 
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
+            self.downloading = True	
+        if self.selectedservername == 'OpenPLi':
+            self.groups = ['vuduo',
+             'vuduo2',
+             'vuduo4k',
+             'vusolo',
+             'vusolo2',			 
+             'vusolo4k',
+             'vusolose',
+             'vuultimo',
+             'vuultimo4k',
+             'vuuno4k',
+             'vuuno4kse',
+             'vuzero',
+             'vuzero4k',]
             self.downloading = True			
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {'ok': self.okClicked,
          'green': self.okClicked,		
@@ -508,7 +530,7 @@ class Images(Screen):
 
     def extractdata(self):
         success = False
-        if self.selectedservername == 'SatDreamGr Experimental' or self.selectedservername == 'SFteam' or self.selectedservername == 'Unofficial image Builds by Ten Below' or self.selectedservername == 'Backup images by vuplus-images team' or self.selectedservername == 'OpenPLi' or self.selectedservername == 'OpenViX' or self.selectedservername == 'PKT' or self.selectedservername == 'ItalySat' or self.selectedservername == 'OpenNFR' or self.selectedservername == 'HDMU' or self.selectedservername == 'OpenSPA' or self.selectedservername == 'Original Images 3.0' or self.selectedservername == 'OpenATV' or self.selectedservername == 'OPenPlus' or self.selectedservername == 'VTi' or self.selectedservername == 'OpenHDFreaks' or self.selectedservername == 'PBnigma' or self.selectedservername == 'SatDreamGr' or self.selectedservername == 'OpenDroid' or self.selectedservername == 'OpenESI' or self.selectedservername == 'BlackHole' or self.selectedservername == 'OpenBlackHole' or self.selectedservername == 'OpenLD':
+        if self.selectedservername == 'SatDreamGr Experimental' or self.selectedservername == 'SFteam' or self.selectedservername == 'Custom build images' or self.selectedservername == 'Backup images' or self.selectedservername == 'OpenPLi' or self.selectedservername == 'OpenViX' or self.selectedservername == 'PKT' or self.selectedservername == 'ItalySat' or self.selectedservername == 'OpenNFR' or self.selectedservername == 'HDMU' or self.selectedservername == 'OpenSPA' or self.selectedservername == 'Original Images 3.0' or self.selectedservername == 'OpenATV' or self.selectedservername == 'OPenPlus' or self.selectedservername == 'VTi' or self.selectedservername == 'OpenHDF' or self.selectedservername == 'PBnigma' or self.selectedservername == 'SatDreamGr' or self.selectedservername == 'OpenDroid' or self.selectedservername == 'OpenESI' or self.selectedservername == 'BlackHole' or self.selectedservername == 'OpenBlackHole' or self.selectedservername == 'OpenLD':
             success, self.data = getdata(self.url)
             if success == True:
                 pass
@@ -639,18 +661,18 @@ class Images(Screen):
 
     def selclicked(self):
         cindex = self['menu'].getSelectionIndex()
-        if self.selectedservername == 'Unofficial Image Builds by Ten Below':
+        if self.selectedservername == 'Custom build images':
             self.url = 'http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/TenBelowImages/' + self.selection + '/'
-        if self.selectedservername == 'Backup images by vuplus-images team':
+        if self.selectedservername == 'Backup images':
             self.url = 'http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/BackUpImages/' + self.selection + '/'
         if self.selectedservername == 'OpenPLi':
             self.url = 'http://downloads.pli-images.org/builds/' + self.selection + '/'			
         if self.selectedservername == 'SatDreamGr':
             self.url = 'http://sgcpm.com/satdreamgr-images-experimental/vu/' + self.selection + '/'
         if self.selectedservername == 'OpenESI':
-            self.url = 'http://www.openesi.eu/images/images/VU+/' + self.selection + '/'
+            self.url = 'http://www.openesi.eu/images/index.php?dir=VU%2B/' + self.selection + '/'
         if self.selectedservername == 'OpenDroid':
-            self.url = 'http://images.opendroid.org/5.5/VU+/' + self.selection + '/'
+            self.url = 'http://images.opendroid.org/6.7/Vu+/index.php?dir=' + self.selection + '/'
         if self.selectedservername == 'Original Images 3.0':
             self.url = 'http://code.vuplus.com/download/boximages/30/' + self.selection + '/'
         if self.selectedservername == 'BlackHole':
@@ -662,17 +684,17 @@ class Images(Screen):
         if self.selectedservername == 'OpenATV':
             self.url = 'http://images.mynonpublic.com/openatv/nightly/' + self.selection + '/'		
         if self.selectedservername == 'OpenViX':
-            self.url = 'http://www.openvix.co.uk/openvix-builds/' + self.selection + '/'
+            self.url = 'http://www.openvix.co.uk/index.php/downloads/vu-plus-images/' + self.selection + '/'
         if self.selectedservername == 'SFteam':
             self.url = 'http://venuscs.net/VuPlusImages/SFteam/' + self.selection + '/'				
-        if self.selectedservername == 'OpenHDFreaks':
-            self.url = 'http://v60.hdfreaks.cc/' + self.selection + '/'
+        if self.selectedservername == 'OpenHDF':
+            self.url = 'http://images.hdfreaks.cc/' + self.selection + '/'
         if self.selectedservername == 'VTi':
             self.url = 'http://venuscs.net/VuPlusImages/VTi/' + self.selection + '/'
         if self.selectedservername == 'PBnigma':
             self.url = 'http://www.pb-download.com/images/6.0/vuplus/'
         if self.selectedservername == 'OpenLD':
-            self.url = 'http://www.odisealinux.com/Firmwares/VuPlus/' + '/'
+            self.url = 'http://panel.vuplus-images.co.uk/VuPlus-Images-Panel/openld/' + '/'
         if self.selectedservername == 'OpenSPA':
             self.url = 'https://openspa.webhop.info/Descarga%20de%20Im%C3%A1genes/Vuplus/' + self.selection + '/'
         if self.selectedservername == 'HDMU':
