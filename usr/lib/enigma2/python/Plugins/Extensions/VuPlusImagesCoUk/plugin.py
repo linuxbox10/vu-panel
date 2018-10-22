@@ -25,7 +25,7 @@ from xml.dom import Node, minidom
 from twisted.web.client import getPage 
 import urllib
 DESKHEIGHT = getDesktop(0).size().height()
-currversion = '2.9'
+currversion = '3.1'
 plugin_path = '/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/fonts'
 skin_path = "/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/Skin/"
 from images import Feeds
