@@ -1,6 +1,6 @@
-#################################################################################################
+##################################################################################################
 ################  vuplus-images.co.uk########################
-#################################################################################################
+##################################################################################################
 from Plugins.Plugin import PluginDescriptor
 from Tools.Directories import fileExists
 from Tools.LoadPixmap import LoadPixmap
@@ -54,7 +54,7 @@ def Plugins(**kwargs):
 
 Amenu_list = [_('VuPlus Addons'),
  _('Download VuPlus Images'),
- _('Install 28.2E Bouquets'), 
+ _('Install Motor Bouquets'), 
  _('Panel News'),
  _('Panel Update'), 
  _('Panel Information')]
@@ -143,7 +143,7 @@ class MenuA(Screen):
             self.session.open(News)
         elif sel == _('Panel Information'):
             self.session.open(Infoo)
-        elif sel == _('Install 28.2E Bouquets'):
+        elif sel == _('Install Motor Bouquets'):
             self.session.open(BouquetUpdate)
         elif sel == _('Panel Update'):
             self.session.open(Update)			
