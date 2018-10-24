@@ -1,7 +1,7 @@
 <screen name="Menu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="#30000000" >
         <eLabel text="VuPlus-Images HD Panel" position="120,0" size="1280,120" noWrap="1" transparent="1" font="Rale;80" foregroundColor="#cc0000" />
         <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VuPlusImagesCoUk/pics/abohd.png" position="1050,690" size="210,26" zPosition="10" alphatest="blend" />				
-        <eLabel text="Latest Release v3.0" position="center,230" valign="center" halign="center" size="1280,45" noWrap="1" transparent="1" font="Rale;42" foregroundColor="#f7d200" zPosition="6" />
+        <eLabel text="Latest Release v3.1" position="center,230" valign="center" halign="center" size="1280,45" noWrap="1" transparent="1" font="Rale;42" foregroundColor="#f7d200" zPosition="6" />
 	<eLabel text="Thanks To The Team:" position="center,300" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;35" foregroundColor="#ffffff" zPosition="6" />
 	<eLabel text="Ten Below, DirtyDonki, Tube10000, vusolo2," position="center,350" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;35" zPosition="6" />
 	<eLabel text="Aliraza63, G_ogi, Talks, danny187, Vmax, Adam59" position="center,390" valign="center" halign="center" size="1280,40" noWrap="1" transparent="1" font="Rale;34" zPosition="6" />
